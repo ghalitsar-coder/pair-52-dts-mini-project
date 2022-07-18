@@ -18,7 +18,7 @@ const Filtered = () => {
   }, [query]);
 
   return (
-    <div className="h-[80vh]">
+    <div className="min-h-[80vh]">
       {filteredMovies.length > 0 ? (
         <SliderContent title={`Results from ${query}`} data={filteredMovies} />
       ) : (
