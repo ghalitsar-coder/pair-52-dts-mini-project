@@ -18,7 +18,7 @@ const apiSearch = axios.create({
 });
 
 export const fetchPopularMovies = () => API.get("/popular");
-export const fetchBySearch = (query) => apiSearch.get(`/?query=${query}`);
+export const fetchBySearch = (query) => apiSearch.get(`?query=${query}`);
 export const fetchMovie = (id) => API.get(`/${id}`);
 export const fetchVideo = (id) => API.get(`/${id}/videos`);
 export const fetchLatestMovies = () => API.get("/latest");
